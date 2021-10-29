@@ -1,20 +1,21 @@
 package common.elements;
 
+import common.driver.UiDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HtmlElement {
 	protected By locator;
-	protected WebDriver driver;
 
-	public HtmlElement(WebDriver driver, By locator) {
-		this.driver = driver;
+	public HtmlElement(By locator) {
 		this.locator = locator;
 	}
 
-	protected WebElement getElement() {
-		return driver.findElement(locator);
+	public WebElement getElement() {
+		return UiDriver.getDriver().findElement(locator);
 	}
 
+	public By getLocator() {
+		return locator;
+	}
 }

@@ -1,4 +1,4 @@
-package com.stormnet.dev_by.page_wrappers.products_page;
+package pageWrappers.dev_by.page_wrappers.products_page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

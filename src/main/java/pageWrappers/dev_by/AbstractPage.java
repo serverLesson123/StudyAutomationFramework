@@ -1,4 +1,4 @@
-package com.stormnet.dev_by;
+package pageWrappers.dev_by;
 
 public class AbstractPage {
 }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="ExampleTest tests">
+<suite name="ExampleTest tests" parallel="true" thread-count="3">
     <test name="examples/example test">
         <packages>
             <package name="com.stormnet.tests.functionalities1.*"/>
+            <package name="com.stormnet.tests.dev_by.*"/>
         </packages>
     </test>
 </suite>
