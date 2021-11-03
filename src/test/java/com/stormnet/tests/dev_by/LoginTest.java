@@ -26,7 +26,5 @@ public class LoginTest extends AbstractTest {
 		LoginFormHelper.submitForm();
 
 		ProductsPageHelper.waitUntilOpened();
-
 	}
-
 }
